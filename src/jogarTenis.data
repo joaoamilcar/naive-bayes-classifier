@@ -1,0 +1,15 @@
+Caso,Panorama,Temperatura,Umidade,Vento,Decisao
+1,Ensolarado,Quente,Alta,Fraco,N
+2,Ensolarado,Quente,Alta,Forte,N
+3,Nublado,Quente,Alta,Fraco,S
+4,Chuvoso,Intermediária,Alta,Fraco,S
+5,Chuvoso,Fria,Normal,Fraco,S
+6,Chuvoso,Fria,Normal,Forte,N
+7,Nublado,Fria,Normal,Forte,S
+8,Ensolarado,Intermediária,Alta,Fraco,N
+9,Ensolarado,Fria,Normal,Fraco,S
+10,Chuvoso,Intermediária,Normal,Fraco,S
+11,Ensolarado,Intermediária,Normal,Forte,S
+12,Nublado,Intermediária,Alta,Forte,S
+13,Nublado,Quente,Normal,Fraco,S
+14,Chuvoso,Intermediária,Alta,Forte,N
