@@ -1,10 +1,10 @@
 class NaiveBayes:
-    dataset = []
-    attributes = []
+
 
     def __init__(self, dataset, attributes):
         self.dataset = dataset
         self.attributes = attributes
+        self.classes = self.get_classes()
 
     # a posteriori probability of a hypothesis: the probability of a hypothesis (event) after evidences are observed
     # @param hypothesis: a sample class from the decision attribute
@@ -63,10 +63,9 @@ class NaiveBayes:
         return result
 
     def run(self, evidences):
-        classes = self.get_classes()
         nb_dict = {}
 
-        for c in classes:
+        for c in self.classes:
             nb_dict[c] = self.p_hypothesis_evidences(c, evidences)
 
         return nb_dict
@@ -82,13 +81,11 @@ class NaiveBayes:
             print('Class', key, ': P(C) =', value / denominator)
 
     def generate_model(self):
-        classes = self.get_classes()
-
         print('=== Classifier model (full training set) ===')
         print('Naive Bayes (simple)')
         print('')
 
-        for c in classes:
+        for c in self.classes:
             print('Class', c, ': P(C) =', self.p_hypothesis(c))
             print('')
 

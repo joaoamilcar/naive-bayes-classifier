@@ -10,7 +10,7 @@ nb = NaiveBayes(dataset, attributes)
 print('=== Example ===')
 random_evidences = random_select_evidences(dataset, attributes) # e.g.: ['Ensolarado', 'Fria', 'Forte']
 nb_dictionary = nb.run(random_evidences)
-probabilities = nb.probabilities_by_normalization(nb_dictionary)
+nb.probabilities_by_normalization(nb_dictionary)
 
 print('')
 nb.generate_model()
